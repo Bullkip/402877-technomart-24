@@ -12,22 +12,26 @@
           Поиск
           <input type="submit" name="search" value="Поиск">
         </form>
-        <span class="search">Поиск</span>
-        <span class="bookmarks">Закладки</span>
-        <span class="basket">Корзина</span>
-        <form action="https://echo.htmlacademy.ru" method="post" class="chekout-btn">
-          <input type="submit" value="Оформить заказ">
-        </form>
-        <span class="chekout-btn">Оформить заказ</span>
+        <button class="bookmarks-btn"><img src="img/icon-bookmark.svg" class="icon-bookmark">Закладки</button>
+        <button class="basket-btn"><img src="img/cart-icon.svg" class="cart-icon">Корзина</button>
+        <button class="chekout-btn">Оформить заказ</button>
         <h1 class="cite-header">Интернет магазин строительных материалов и инструментов для ремонта</h1>
         <div class="header-contacts">
-          <span class="phone-btn"><b>+7(812) 555-55-05</b></span>
+            <button class="phone-btn"><img src="img/icon-phone.svg" class="icon-phone">
+          +7(812) 555-55-05</button>
           <p>г.Санкт Петербург, ул.Б.Конюшенная д.19/8</p>
         </div>
-        <div class="personal-area"><span class="personal-area-form">Равшан Джамшутович</span>
+        <div class="personal-area">
+            <a href="user-panel.html" class="user-panel">
+            <img src="img/icon-user.svg" class="icon-user">
+          </a>
+            <b>Равшан Джамшутович</b>
+            <button class="logout">
+            <img src="img/icon-logout.svg" class="icon-logout">
+          </button>
         <ul>
-          <li><a href="#"></a>Мои заказы</li>
-          <li><a href="#"></a>Личный кабинет</li>
+          <li><a href="basket.html"></a>Мои заказы</li>
+          <li><a href="user-panel.html"></a>Личный кабинет</li>
         </ul></div>
       </section>
       <nav class="main-navigation">
@@ -44,16 +48,34 @@
     </header>
     <main class="catalog-content">
         <ul class="breadcrumbs">
-          <li><a href="main.html"><img src="#" alt="Главная"></a></li>
+          <li><a href="main.html"><img src="img/icon-home.svg"
+                 class="icon-home" alt="Главная"></a></li>
           <li><a href="catalog.html"></a>Каталог</li>
-          <li><a href="#"></a>Инструмент</li>
+          <li><a href="instruments.html"></a>Инструмент</li>
           <li>Перфораторы</li>
         </ul>
         <section class="page-title">
           <h2>Перфораторы</h2>
         </section>
         <section class="filter">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <b class="visually-hidden">Фильтр</b>
+          <legend>ПРОИЗВОДИТЕЛИ</legend>
+          <ul>
+            <li class="filter-option">BOSCH</li>
+            <li class="filter-option">ИНТЕРСКОЛ</li>
+            <li class="filter-option">MAKITA</li>
+            <li class="filter-option">DEWALT</li>
+            <li class="filter-option">HITACHI</li>
+          </ul>
+          <hr>
+          <legend>ПИТАНИЕ:</legend>
+          <ul>
+            <li class="filter-option">АККАМУЛЯТОРНЫЕ</li>
+            <li class="filter-option">СЕТЕВЫЕ</li>
+          </ul>
+          <form action="https://echo.htmlacademy.ru" method="post" class="filter-result">
+          <input type="submit" name="filter-result" value="Показать">
+        </form>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров</h2>
@@ -69,12 +91,8 @@
               <div class="item-price">
                 <b class="old-price"> 22500 Р.</b>
                 <b class="current-prrice"> 15500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
             <li>
@@ -88,12 +106,8 @@
               <div class="item-price">
                 <b class="old-price"> 30500 Р.</b>
                 <b class="current-prrice"> 25500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
             <li>
@@ -106,12 +120,8 @@
               </p>
               <div class="item-price">
                 <b class="current-prrice"> 12500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
                 <img src="http://placehold.it/40" alt="new label" class="new-label">
               </div>
             </li>
@@ -126,12 +136,8 @@
               <div class="item-price">
                 <b class="old-price"> 22500 Р.</b>
                 <b class="current-prrice"> 15500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
             <li>
@@ -145,12 +151,8 @@
               <div class="item-price">
                 <b class="old-price"> 30500 Р.</b>
                 <b class="current-prrice"> 25500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
                 <img src="http://placehold.it/40" alt="new label" class="new-label">
               </div>
             </li>
@@ -164,12 +166,8 @@
               </p>
               <div class="item-price">
                 <b class="current-prrice"> 12500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
             <li>
@@ -183,12 +181,8 @@
               <div class="item-price">
                 <b class="old-price"> 22500 Р.</b>
                 <b class="current-prrice"> 15500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
                 <img src="http://placehold.it/40" alt="new label" class="new-label">
               </div>
             </li>
@@ -203,12 +197,8 @@
               <div class="item-price">
                 <b class="old-price"> 30500 Р.</b>
                 <b class="current-prrice"> 25500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
             <li>
@@ -221,12 +211,8 @@
               </p>
               <div class="item-price">
                 <b class="current-prrice"> 12500 Р.</b>
-                <form action="https://echo.htmlacademy.ru" method="post" class="buy-form">
-                  <input type="submit" name="buy" value="Купить">
-                </form>
-                <form action="https://echo.htmlacademy.ru" method="post" class="bookmarks-form">
-                  <input type="submit" name="bookmarks" value="В закладки">
-                </form>
+                <button class="buy-btn">Купить</button>
+                <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
           </ul>
