@@ -6,34 +6,35 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="top-menu">
-        <a href="main.html" class="mainlogo"><img src="http://placehold.it/150x100" alt="logo"></a>
+      <div class="top-menu">
+        <a href="main.html" class="mainlogo"><img src="img/logo-header.svg"  alt="logo"></a>
         <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
-          Поиск
-          <input type="submit" name="search" value="Поиск">
-        </form>
-        <button class="bookmarks-btn"><img src="img/icon-bookmark.svg" class="icon-bookmark">Закладки</button>
-        <button class="basket-btn"><img src="img/cart-icon.svg" class="cart-icon">Корзина</button>
+          <img src="img/icon-search.svg"  class="icon-search" alt="search">
+          <input type="search" name="search" value="Поиск"></form>
+        <button class="bookmarks-btn"><img src="img/icon-bookmark.svg" class="icon-bookmark" alt="icon-bookmark">Закладки:0</button>
+        <button class="basket-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Корзина:0</button>
         <button class="chekout-btn">Оформить заказ</button>
         <h1 class="cite-header">Интернет магазин строительных материалов и инструментов для ремонта</h1>
         <div class="header-contacts">
-            <button class="phone-btn"><img src="img/icon-phone.svg" class="icon-phone">
+            <button class="phone-btn"><img src="img/icon-phone.svg"  class="icon-phone" alt="icon-phone">
           +7(812) 555-55-05</button>
-          <p>г.Санкт Петербург, ул.Б.Конюшенная д.19/8</p>
+          <p>г.Санкт Петербург,<br>
+           ул.Б.Конюшенная д.19/8</p>
         </div>
         <div class="personal-area">
             <a href="user-panel.html" class="user-panel">
-            <img src="img/icon-user.svg" class="icon-user">
+            <img src="img/icon-user.svg" class="icon-user" alt="icon-user">
           </a>
             <b>Равшан Джамшутович</b>
             <button class="logout">
-            <img src="img/icon-logout.svg" class="icon-logout">
+            <img src="img/icon-logout.svg" class="icon-logout" alt="icon-logout">
           </button>
-        <ul>
-          <li><a href="basket.html"></a>Мои заказы</li>
-          <li><a href="user-panel.html"></a>Личный кабинет</li>
-        </ul></div>
-      </section>
+          <ul>
+            <li><a href="basket.html"></a>Мои заказы</li>
+            <li><a href="user-panel.html"></a>Личный кабинет</li>
+          </ul>
+        </div>
+      </div>  
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="main.html"></a>Главная</li>
@@ -59,22 +60,29 @@
         </section>
         <section class="filter">
           <b class="visually-hidden">Фильтр</b>
+          <form action="https://echo.htmlacademy.ru" method="post" class="filter-result">
           <legend>ПРОИЗВОДИТЕЛИ</legend>
           <ul>
-            <li class="filter-option">BOSCH</li>
-            <li class="filter-option">ИНТЕРСКОЛ</li>
-            <li class="filter-option">MAKITA</li>
-            <li class="filter-option">DEWALT</li>
-            <li class="filter-option">HITACHI</li>
+            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+             type="checkbox" name="bosch" checked>BOSCH</li>
+            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+             type="checkbox" name="interskol">ИНТЕРСКОЛ</li>
+            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+             type="checkbox" name="makita" checked>MAKITA</li>
+            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+             type="checkbox" name="dewalt">DEWALT</li>
+            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+             type="checkbox" name="hitachi">HITACHI</li>
           </ul>
           <hr>
           <legend>ПИТАНИЕ:</legend>
           <ul>
-            <li class="filter-option">АККАМУЛЯТОРНЫЕ</li>
-            <li class="filter-option">СЕТЕВЫЕ</li>
+            <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio"
+             type="radio" name="product-group" value="accumulator" checked>АККАМУЛЯТОРНЫЕ</li>
+            <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio"
+             type="radio" name="product-group" value="mains-charging">СЕТЕВЫЕ</li>
           </ul>
-          <form action="https://echo.htmlacademy.ru" method="post" class="filter-result">
-          <input type="submit" name="filter-result" value="Показать">
+          <button type="submit" name="filter-result">Показать</button>
         </form>
         </section>
         <section class="catalog">
@@ -91,7 +99,7 @@
               <div class="item-price">
                 <b class="old-price"> 22500 Р.</b>
                 <b class="current-prrice"> 15500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
@@ -106,7 +114,7 @@
               <div class="item-price">
                 <b class="old-price"> 30500 Р.</b>
                 <b class="current-prrice"> 25500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
@@ -120,9 +128,9 @@
               </p>
               <div class="item-price">
                 <b class="current-prrice"> 12500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
-                <img src="http://placehold.it/40" alt="new label" class="new-label">
+                <img src="img/new-flag.png"  alt="new label" class="new-label" >
               </div>
             </li>
             <li>
@@ -136,7 +144,7 @@
               <div class="item-price">
                 <b class="old-price"> 22500 Р.</b>
                 <b class="current-prrice"> 15500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
@@ -151,9 +159,9 @@
               <div class="item-price">
                 <b class="old-price"> 30500 Р.</b>
                 <b class="current-prrice"> 25500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
-                <img src="http://placehold.it/40" alt="new label" class="new-label">
+                <img src="img/new-flag.png"  alt="new label" class="new-label" >
               </div>
             </li>
             <li>
@@ -166,7 +174,7 @@
               </p>
               <div class="item-price">
                 <b class="current-prrice"> 12500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
@@ -181,9 +189,9 @@
               <div class="item-price">
                 <b class="old-price"> 22500 Р.</b>
                 <b class="current-prrice"> 15500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
-                <img src="http://placehold.it/40" alt="new label" class="new-label">
+                <img src="img/new-flag.png"  alt="new label" class="new-label" >
               </div>
             </li>
             <li>
@@ -197,7 +205,7 @@
               <div class="item-price">
                 <b class="old-price"> 30500 Р.</b>
                 <b class="current-prrice"> 25500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
@@ -211,7 +219,7 @@
               </p>
               <div class="item-price">
                 <b class="current-prrice"> 12500 Р.</b>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn"><img src="img/icon-cart.svg"  class="cart-icon" alt="icon-cart">Купить</button>
                 <button class="bookmarks-btn">В закладки</button>
               </div>
             </li>
@@ -220,12 +228,18 @@
           <li class="pagination-item pagination-item-current "><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item pagination-item-next"><div class="pagination-button">СЛЕДУЮЩАЯ</div></li>
         </ul>
+        </section>
+        <section class="instruments-about">
+          <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
     </main>
     <footer class="main-footer">
-      <section class="top-footer">
-      <a href="main.html" class="footer-logo"><img src="http://placehold.it/150x100"  alt="footer-logo"></a>
+      <div class="top-footer">
+      <a href="main.html" class="footer-logo"><img src="img/logo-footer.svg"  alt="footer-logo"></a>
       <div class="footer-contact"><p>г.Санкт Петербург, ул.Б.Конюшенная д.19/8</p></div>  
       <nav>
         <ul class="top-footer-nav">
@@ -244,15 +258,18 @@
           <li><a href="special-offer.html"></a>Спецпредложения</li>
         </ul>
       </nav>
-      </section>
-      <section class="footer-bottom">
-        <b class="copyright">2010-2019 Компания "Техномарт" Все права защищены</b>
-        <a href="vk.com" class="footer-social">Мы в ВК.</a>
-        <a href="fscebook.com" class="footer-social">Мы а Facebook.</a>
-        <a href="instagram.com" class="footer-social">Мы в Instagram.</a>
-        <b><a class="footer-feedback" href="mail@htmlacademy.ru"></a>mail@htmlacademy.ru</b>
-        <b><a class="site-developed" href="htmlacademy.ru"></a>htmlacademy.ru</b>
-      </section>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">2010-2019 Компания "Техномарт"<br>Все права защищены</p>
+        <a href="vk.com" class="footer-social" >
+          <img src="img/icon-vk.svg" alt="Мы в ВК."></a>
+        <a href="facebook.com" class="footer-social" >
+          <img src="img/icon-fb.svg" alt="Мы а Facebook."></a>
+        <a href="instagram.com" class="footer-social" >
+          <img src="img/icon-insta.svg" alt="Мы в Instagram."></a>
+        <p>Обратная связь:<br><a class="footer-feedback" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Разработано-<br><a class="site-developed" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      </div>
     </footer>
   </body>
 </html>
