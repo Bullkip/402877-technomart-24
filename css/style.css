@@ -28,7 +28,8 @@ a {
 .manufactures-filter,
 .power-supply,
 .product-list,
-.pagination-list
+.pagination-list,
+.ftr-nav
  {
   list-style: none;
 }
@@ -91,6 +92,20 @@ a {
   height: 42px;
 }
 
+.search-input{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 220px;
+    vertical-align: middle;
+}
+
+.search-submit{
+    width: 17px;
+    height: 17px;
+    border: none;
+    background: url(img/icon-search.svg) no-repeat 50% 50%; /* Параметры фона */
+}
 .site-header-container {
   width: 196px;
   height: 60px;
@@ -166,6 +181,7 @@ p.header-address{
 }
 
 ul.site-navigation  {
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -321,13 +337,16 @@ ul.site-navigation  {
   color:#000000;
 }
 
-.top-footer {
+.main-footer {
   width: 1200px;
   height: 300px;
-
-
-
+  display: flex;
+  flex-direction: column;
   background-color: #32425c;
+}
+
+.top-container-footer{
+  display:flex;
 }
 
 .site-logo-footer {
@@ -349,10 +368,58 @@ ul.site-navigation  {
   padding-bottom:25px;
 }
 
+.top-footer-nav {
+  display: flex;
+  padding: 0;
+  margin: 42px 0px 0px 173px;
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.top-footer-nav li {
+  padding-right: 60px;
+}
+
+.bottom-container-footer {
+  display: flex;
+}
+
+.footer-contact{
+  width: 323px;
+  height: 40px;
+  margin-left: 130px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.footer-nav {
+  display: flex;
+  padding: 0;
+  margin-left: 95px;
+}
+
+.footer-nav a {
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: #ffd180;
+}
+
+.footer-nav li {
+  padding-right:60px;
+}
+
 .footer-bottom {
   width: 1200px;
   height: 107px;
-
+  margin-top: 67px;
   display: inline-flex;
   flex-direction: row;
   justify-content: start;
@@ -361,7 +428,62 @@ ul.site-navigation  {
   background-color: #293449;
 }
 
+.copyright-container {
+  width: 210px;
+  height: 40px;
+  margin-left: 130px;
+  margin-right: 180px;
+}
+
+.copyright {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+}
+
+.social-container {
+  margin-right: 119px;
+}
+
+.htmlacademy-container {
+  display:flex;
+  width: 290px;
+  height: 70px;
+}
+
+.feedback-container {
+  display:flex;
+  width: 135px;
+  height: 32px;
+  margin-right:53px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.feedback-container a{
+  color:#ffd180;
+}
+
+.developed-container {
+  display:flex;
+  width: 96px;
+  height: 34px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.developed-container a{
+  color:#ffd180;
+}
+
 .breadcrumbs {
+  display: flex;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -436,9 +558,11 @@ button.filter-result {
 }
 
 ul.product-list {
+  width: 665px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
 
 }
 
@@ -453,7 +577,7 @@ li.product-list-item {
   color: #000000;
 }
 
-button.buy-btn{
+.buy-btn{
   width: 135px;
   height: 38px;
   padding:0;
@@ -463,21 +587,56 @@ button.buy-btn{
   text-align: center;
   text-transform: uppercase;
   box-shadow: inset 0px -3px 0 0 #367315;
+  border: 1px solid #367315;
   background-color: #63a63e;
 }
 
-button.bookmarks-btn {
+.item-bookmarks-btn {
   width: 135px;
   height: 38px;
   padding:0;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px
+  line-height: 18px;
   text-align:center;
   text-transform: uppercase;;
-  border: 1 solid #367315;
+  border: 2px solid #367315;
+  background-color: white;
 }
 ul.pagination-list {
   display:flex;
 }
 
+.instruments-about-container {
+  display: block;
+  width: 1200px;
+  height: 261px;
+  background-color: #f4f7f9;
+}
+.instruments-about  {
+  width:850px;
+  height: 121px;
+  padding-left: 130px;
+  padding-top: 67px;
+  padding-right: 132px;
+  padding-bottom: 73px;
+  color:#000000;
+
+}
+
+.instruments-about h2 {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-align:left;
+
+
+}
+
+.instruments-about p {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-align:left;
+
+}
