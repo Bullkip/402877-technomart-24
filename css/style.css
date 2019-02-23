@@ -47,7 +47,7 @@ a {
 
 .top-menu {
   display:flex;
-
+  height: 42px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -78,12 +78,34 @@ a {
   padding-bottom: 16px;
 }
 
+.bookmarks-btn {
+  width: 150px;
+  padding-left: 13px;
+  border: none;
+  background: inherit;
+  color: inherit;
+}
+
+.basket-btn {
+  width: 150px;
+  padding: 0px;
+  border: none;
+  background-color: #ee3643;
+  color: inherit;
+}
+
+.chekout-btn {
+  width: 150px;
+  padding: 0px;
+  border: none;
+  background-color: #63a63e;
+  color: inherit;
+}
+
 .header-button-text {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
-
-
 }
 
 .site-search {
@@ -92,19 +114,6 @@ a {
   height: 42px;
 }
 
-.search-input{
-    border: none;
-    outline: none;
-    -webkit-appearance: none;
-    width: 220px;
-    vertical-align: middle;
-}
-
-.search-submit{
-    width: 17px;
-    height: 17px;
-    border: none;
-    background: url(img/icon-search.svg) no-repeat 50% 50%; /* Параметры фона */
 }
 .site-header-container {
   width: 196px;
