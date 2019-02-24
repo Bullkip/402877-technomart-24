@@ -55,9 +55,7 @@ a {
   background-color: #293449;
 }
 
-.user-navigation{
-  display: flex;
-}
+
 
 .site-logo-header {
   display: block;
@@ -114,7 +112,15 @@ a {
   height: 42px;
 }
 
+.user-navigation{
+  width: 940px;
+  height: 138px;
+  display: flex;
+  margin-left: 130px;
+  align-items: center;
+  justify-content: start;
 }
+
 .site-header-container {
   width: 196px;
   height: 60px;
@@ -140,11 +146,15 @@ a {
 }
 
 .phone-btn {
+  width: 270px;
+  height: 45px;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+  border: 2px solid white;
+  background-color: inherit;
   color: #ee3643;
 }
 
@@ -154,14 +164,16 @@ p.header-address{
 
 .login-btn,
 .registration-btn {
+  height: 45px;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
   color: #000000;
-
-  background-color:#f4f7f9;
+  padding: 0;
+  border: none;
+  background-color: white;
 }
 
 .user-block {
