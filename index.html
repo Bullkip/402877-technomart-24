@@ -17,7 +17,7 @@
       <div class="site-search">
         <form action="https://echo.htmlacademy.ru" class="search-form header-button-text" method="post">
         <img alt="search" class="icon-search" src="img/icon-search.svg">
-        <input name="search" type="search" value="Поиск">
+        <input name="search" type="search" value="Поиск" class="search-input">
         </form>
       </div>
       <button class="bookmarks-btn header-button-text"><img alt="icon-bookmark" class="icon-bookmark" src="img/icon-bookmark.svg">Закладки:0</button>
@@ -30,8 +30,8 @@
       </div>
       <div class="header-contacts">
         <button class="phone-btn"><img alt="icon-phone" class="icon-phone" src="img/icon-phone.svg"> +7(812)
-        555-55-05</button>
-        <p>г.Санкт Петербург,ул.Б.Конюшенная д.19/8</p>
+        555-05-55</button>
+        <p class="contacts-address">г.Санкт Петербург,ул.Б.Конюшенная д.19/8</p>
       </div>
       <div class="navigation-button-container">
         <button class="login-btn"><img alt="icon-login" class="icon-login" src="img/icon-login.svg"> Войти</button>
@@ -65,33 +65,97 @@
     </nav>
   </header>
   <main class="site-content">
-    <section class="interactive-menu-container">
-      <ul class="interactive-menu ">
+    <section class="interactive-menu">
+      <div class="interactive-menu-container">
+        <div class="left-container-block">
+          <ul class="left-block">
+            <li class="interactive-item materials-item">
+              <div class="item-container">
+                <h3 class="interactive-item-header">Материалы</h3>
+                <button class="content-button materials-btn">НА ЛЮБОЙ ВКУС</button>
+              </div>
+              <div class="img-container"><img alt="materials-icon " class="icon-materials interactive-icon"
+                src="img/icon-1.svg" width="44" height="65"></div>
+            </li>
+            <li class="interactive-item instruments-item">
+              <div class="item-container">
+                <h3 class="interactive-item-header">Инструмент</h3>
+                <button class="content-button instruments-btn">НА ВСЕ СЛУЧАИ</button>
+              </div>
+              <div class="item-img"><img alt="instruments-icon" class="icon-instruments interactive-icon"
+                src="img/icon-2.svg" width="75" height="61"></div>
+            </li>
+            <li class="interactive-menu-slider">
+              <div class="slider-container">
+                <div class="interactive-slider-text">
+                  <h2 class="slider-header">ДРЕЛИ</h2>
+                  <p class="slider-paragraph">Соседям на радость!</p>
+                </div>
+                  <img alt="slider-img" class="slider-img" src="img/slider1.jpg" width="620" height="266" >
+                  <img alt="icon-left" class="icon-slider icon-left-slider" src="img/icon-left.svg">
+                  <img alt="icon-right" class="icon-slider icon-right-slider" src="img/icon-right.svg">
+                  <button class="slider-button">ОТКРЫТЬ КАТАЛОГ</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right-container-block">
+          <ul class="right-block">
+            <li class="interactive-item technics-item" >
+              <div class="item-container">
+                <h3 class="interactive-item-header">Техника</h3>
+                <button class="content-button technics-btn">ДЛЯ СТРОЙКИ</button>
+              </div>
+              <div class="item-img"><img alt="materials-icon" class="icon-materials interactive-icon"
+                src="img/icon-1.svg" width="44" height="65"></div>
+            </li>
+            <li class="interactive-item special-offer-item">
+              <div class="item-container">
+                <h3 class="interactive-item-header">Скидки до 50%</h3>
+                <button class="content-button special-offer-btn">На 350 ТОВАРОВ</button>
+              </div>
+              <div class="item-img"><img alt="special-offer-icon" class="icon-special-offer interactive-icon" src="img/icon-4.svg"
+                width="59" height="72"></div>
+            </li>
+            <li class="interactive-item delivery-item">
+              <div class="item-container">
+                <h3 class="interactive-item-header">Доставка</h3>
+                <button class="content-button delivery-btn">БЕСПЛАТНО</button>
+              </div>
+              <div class="item-img"><img alt="delivery-icon" class="icon-delivery interactive-icon" src="img/icon-5.svg"width="78"
+                height="63"></div>
+            </li>
+          </ul>
+        </div
+      </div>
+      <!-- <ul class="interactive-menu ">
         <li class="materials-item interactive-item">
-          <h3 class="interactive-item-header">Материалы</h3><img alt="materials-icon" class="icon-1" src="img/icon-1.svg"> <button class=
-          "content-button materials-btn">НА ЛЮБОЙ ВКУС</button>
+          <h3 class="interactive-item-header">Материалы</h3><img alt="materials-icon " class="icon-materials interactive-icon"
+          src="img/icon-1.svg" width="44" height="65"> <button class="content-button materials-btn">НА ЛЮБОЙ ВКУС</button>
         </li>
         <li class="instruments-item interactive-item">
-          <h3 class="interactive-item-header">Инструмент</h3><img alt="instruments-icon" class="icon-2" src="img/icon-2.svg"> <button class=
-          "content-button instruments-btn">НА ВСЕ СЛУЧАИ</button>
+          <h3 class="interactive-item-header">Инструмент</h3><img alt="instruments-icon" class="icon-instruments interactive-icon"
+           src="img/icon-2.svg" width="75" height="61"> <button class="content-button instruments-btn">НА ВСЕ СЛУЧАИ</button>
         </li>
         <li class="technics-item interactive-item">
-          <h3 class="interactive-item-header">Техника</h3><img alt="technics-icon" class="icon-3" src="img/icon-3.svg"> <button class=
-          "content-button technics-btn">ДЛЯ СТРОЙКИ</button>
+          <h3 class="interactive-item-header">Техника</h3><img alt="technics-icon" class="icon-technics interactive-icon"
+           src="img/icon-3.svg"width="78" height="62"> <button class="content-button technics-btn">ДЛЯ СТРОЙКИ</button>
         </li>
-        <li class="interactive-menu-slider interactive-item">
-          <h2 class="slider-header">ДРЕЛИ</h2>
-          <p>Соседям на радость!</p><img alt="slider-img" class="slider-img" src="img/slider1.jpg" width="620px" height="266px" > <img alt=
-          "icon-left" class="icon-left-slider" src="img/icon-left.svg"> <img alt="icon-right" class="icon-right-slider"
-          src="img/icon-right.svg">
+        <li class="interactive-menu-slider">
+          <div class="interactive-slider-text">
+            <h2 class="slider-header">ДРЕЛИ</h2>
+            <p>Соседям на радость!</p>
+          </div>
+          <img alt="slider-img" class="slider-img" src="img/slider1.jpg" width="620" height="266" > <img alt=
+          "icon-left" class="icon-slider icon-left-slider" src="img/icon-left.svg"> <img alt="icon-right" class="icon-slider icon-right-slider" src="img/icon-right.svg">
         </li>
         <li class="special-offer-item interactive-item">
-          <h3 class="interactive-item-header">Скидки до 50%</h3><img alt="special-offer-icon" class="icon-4" src="img/icon-4.svg"> <button class="content-button special-offer-btn">На 350 ТОВАРОВ</button>
+          <h3 class="interactive-item-header">Скидки до 50%</h3><img alt="special-offer-icon" class="icon-special-offer interactive-icon" src="img/icon-4.svg" width="59" height="72"> <button class="content-button special-offer-btn">На 350 ТОВАРОВ</button>
         </li>
         <li class="delivery-item interactive-item">
-          <h3 class="interactive-item-header">Доставка</h3><img alt="delivery-icon" class="icon-5" src="img/icon-5.svg"> <button class="content-button delivery-btn">БЕСПЛАТНО</button>
+          <h3 class="interactive-item-header">Доставка</h3><img alt="delivery-icon" class="icon-delivery interactive-icon" src="img/icon-5.svg"width="78" height="63"> <button class="content-button delivery-btn">БЕСПЛАТНО</button>
         </li>
-      </ul>
+      </ul> -->
     </section>
     <section class="popular-products">
       <div class="popular-container">
@@ -99,38 +163,64 @@
       </div>
       <ul class="popular-products-list">
         <li class="popular-products-item">
-          <p class="catalog-item-image"><a><img alt="Перфоратор Bosch BFG 9000" src="img/product-1.jpg"></a></p>
-          <h3><a href="product-item.html">Перфоратор Bosch BFG 9000</a></h3>
+          <p class="catalog-item-image"><a><img alt="Перфоратор Bosch BFG 9000" src="img/product-1.jpg" width="218" height="170"></a></p>
+          <h3 class="popular-item-header"><a href="product-item.html">Перфоратор Bosch BFG 9000</a></h3>
           <div class="item-price">
-            <b class="old-price">32500 Р.</b> <b class="current-prrice">25500 Р.</b> <button class="buy-btn"><img alt=
-            "icon-cart" class="cart-icon" src="img/icon-cart.svg">Купить</button> <button class="bookmarks-btn">В
-            закладки</button>
+            <b class="old-price">32500 Р.</b>
+            <div class="current-price-container">
+              <img src="img/btn-current-price.svg" alt="current-price" width="141" height="38" class="current-price-img">
+              <b class="current-price">25500 Р.</b>
+            </div>
+          </div>
+          <div class="visually-hiden">
+            <button class="buy-btn"><img alt="icon-cart" class="cart-icon" src="img/icon-cart.svg">Купить</button>
+            <button class="bookmarks-btn">В закладки</button>
           </div>
         </li>
         <li class="popular-products-item">
-          <p class="catalog-item-image"><a><img alt="Перфоратор Bosch BFG 3000" src="img/product-2.jpg"></a></p>
-          <h3><a href="product-item.html">Перфоратор Bosch BFG 3000</a></h3>
+          <p class="catalog-item-image"><a><img alt="Перфоратор Bosch BFG 3000" src="img/product-2.jpg" width="218" height="170"></a></p>
+          <h3 class="popular-item-header"><a href="product-item.html">Перфоратор Bosch BFG 3000</a></h3>
           <div class="item-price">
-            <b class="old-price">22500 Р.</b> <b class="current-prrice">15500 Р.</b> <button class="buy-btn"><img alt=
-            "icon-cart" class="cart-icon" src="img/icon-cart.svg">Купить</button> <button class="bookmarks-btn">В
-            закладки</button>
+            <b class="old-price">22500 Р.</b>
+            <div class="current-price-container">
+              <img src="img/btn-current-price.svg" alt="current-price" width="141" height="38" class="current-price-img">
+              <b class="current-price">25500 Р.</b>
+            </div>
+          </div>
+          <div class="visually-hiden">
+            <button class="buy-btn"><img alt="icon-cart" class="cart-icon" src="img/icon-cart.svg">Купить</button>
+            <button class="bookmarks-btn">В закладки</button>
           </div>
         </li>
         <li class="popular-products-item">
-          <p class="catalog-item-image"><a><img alt="Перфоратор Bosch BFG 6000" src="img/product-3.jpg"></a></p>
-          <h3><a href="product-item.html">Перфоратор Bosch BFG 6000</a></h3>
+          <p class="catalog-item-image"><a><img alt="Перфоратор Bosch BFG 6000" src="img/product-3.jpg" width="218" height="170"></a></p>
+          <h3 class="popular-item-header"><a href="product-item.html">Перфоратор Bosch BFG 6000</a></h3>
           <div class="item-price">
-            <b class="old-price">30500 Р.</b> <b class="current-prrice">25500 Р.</b> <button class="buy-btn"><img alt=
-            "icon-cart" class="cart-icon" src="img/icon-cart.svg">Купить</button> <button class="bookmarks-btn">В
-            закладки</button>
+            <b class="old-price">30500 Р.</b>
+            <div class="current-price-container">
+              <img src="img/btn-current-price.svg" alt="current-price" width="141" height="38" class="current-price-img">
+              <b class="current-price">25500 Р.</b>
+            </div>
+          </div>
+          <div class="visually-hiden">
+            <button class="buy-btn"><img alt="icon-cart" class="cart-icon" src="img/icon-cart.svg">Купить</button>
+            <button class="bookmarks-btn">В закладки</button>
           </div>
         </li>
         <li class="popular-products-item">
-          <p class="catalog-item-image"><a><img alt="Перфоратор Bosch BFG 2000" src="img/product-4.jpg"></a></p>
-          <h3><a href="product-item.html">Перфоратор Bosch BFG 2000</a></h3>
-          <div class="item-price"><b class="current-prrice">12500 Р.</b> <button class="buy-btn"><img alt="icon-cart"
-          class="cart-icon" src="img/icon-cart.svg">Купить</button> <button class="bookmarks-btn">В закладки</button>
-          <img alt="new label" class="new-label" src="img/new-flag.png"></div>
+          <img alt="new label" class="popular-new-label" src="img/new-flag.png">
+          <p class="catalog-item-image"><a><img class="labeled-img-popular" alt="Перфоратор Bosch BFG 2000" src="img/product-4.jpg" width="218" height="170"></a></p>
+          <h3 class="popular-item-header"><a href="product-item.html">Перфоратор Bosch BFG 2000</a></h3>
+          <div class="item-price">
+            <div class="current-price-container last-current-price">
+              <img src="img/btn-current-price.svg" alt="current-price" width="141" height="38" class="current-price-img">
+              <b class="current-price ">25500 Р.</b>
+            </div>
+          </div>
+          <div class="visually-hiden">
+            <button class="buy-btn"><img alt="icon-cart" class="cart-icon" src="img/icon-cart.svg">Купить</button>
+            <button class="bookmarks-btn">В закладки</button>
+          </div>
         </li>
       </ul>
     </section>
@@ -140,28 +230,31 @@
       </div>
       <ul class="popular-manufacturers-list">
         <li class="manufacturers-item">
-          <a href="bosch.com"><img alt="bosch" class="bosch manufacturer-img" src="img/bosch.png"></a>
+          <a href="bosch.com"><img alt="bosch" class="bosch manufacturer-img" src="img/bosch.png" width="126" height="37"></a>
         </li>
         <li class="manufacturers-item">
-          <a href="makita.com"><img alt="makita" class="makita manufacturer-img" src="img/makita.png"></a>
+          <a href="makita.com"><img alt="makita" class="makita manufacturer-img" src="img/makita.png" width="123" height="40"></a>
         </li>
         <li class="manufacturers-item">
-          <a href="dewalt.com"><img alt="dewalt" class="dewalt manufacturer-img" src="img/de-walt.png"></a>
+          <a href="dewalt.com"><img alt="dewalt" class="dewalt manufacturer-img" src="img/de-walt.png" width="146" height="44"></a>
         </li>
         <li class="manufacturers-item">
-          <a href="www.interskol.ru"><img alt="interskol" class="interskol manufacturer-img" src="img/interskol.png"></a>
+          <a href="www.interskol.ru"><img alt="interskol" class="interskol manufacturer-img" src="img/interskol.png"
+             width="200" height="88"></a>
+        </li>
+      </ul>
+      <ul class="popular-manufacturers-list" >
+        <li class="manufacturers-item">
+          <a href="hitachi.com"><img alt="hitachi" class="hitachi manufacturer-img" src="img/hitachi.png" width="169" height="31"></a>
         </li>
         <li class="manufacturers-item">
-          <a href="hitachi.com"><img alt="hitachi" class="hitachi manufacturer-img" src="img/hitachi.png"></a>
+          <a href="www.lgcorp.com"><img alt="lg" class="lg manufacturer-img" src="img/lg.png" width="121" height="73"></a>
         </li>
         <li class="manufacturers-item">
-          <a href="www.lgcorp.com"><img alt="lg" class="lg manufacturer-img" src="img/lg.png"></a>
+          <a href="www.aeg.com"><img alt="aeg" class="aeg manufacturer-img" src="img/aeg.png" width="151" height="96"></a>
         </li>
         <li class="manufacturers-item">
-          <a href="www.aeg.com"><img alt="aeg" class="aeg manufacturer-img" src="img/aeg.png"></a>
-        </li>
-        <li class="manufacturers-item">
-          <a href="www.metabo.de"><img alt="metabo" class="metabo manufacturer-img" src="img/metabo.png"></a>
+          <a href="www.metabo.de"><img alt="metabo" class="metabo manufacturer-img" src="img/metabo.png" width="204" height="69"></a>
         </li>
       </ul>
     </section>
